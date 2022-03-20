@@ -106,3 +106,10 @@
        let customerPhoneNumber = '';
       let  orders = 0;
         let deliveryOption = '';
+        pizzaSizeInput.addEventListener('change', (e) => {
+            pizzaSize = e.target.value;
+    
+            pizzaNameInput.addEventListener('change', (e) => {
+                pizzaName = e.target.value;
+            });
+        });
