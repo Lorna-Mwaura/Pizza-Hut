@@ -164,10 +164,10 @@
 
                     console.log(`Pizza:`);
                     console.log(pizza);
-                    alert(total);
+                    console.log(pizza.getTotal());
+                    alert(pizza.getTotal() + ''+"Customer here is your Bill");
                 });
             });
 
         });
-    });
-});
+  
