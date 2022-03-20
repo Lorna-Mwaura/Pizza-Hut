@@ -108,8 +108,66 @@
         let deliveryOption = '';
         pizzaSizeInput.addEventListener('change', (e) => {
             pizzaSize = e.target.value;
-    
+        });
             pizzaNameInput.addEventListener('change', (e) => {
                 pizzaName = e.target.value;
             });
+       
+        pizzaCrustInput.addEventListener('change', e => {
+            pizzaCrust = e.target.value;
         });
+            pizzaToppingInput.addEventListener('change', e => {
+                pizzaTopping = e.target.value;
+            });
+
+            customerInput.addEventListener('change', e => {
+                customerName = e.target.value;
+            });
+
+            phoneNumberInput.addEventListener('change', e => {
+                customerPhoneNumber = e.target.value;
+            });
+
+            orderNumberInput.addEventListener('change', e => {
+                orders = e.target.value;
+            });
+
+            deliveryInput.addEventListener('change', e => {
+                deliveryOption = e.target.value;
+            });
+
+            document.getElementById('order-form').addEventListener('submit', (e) => {
+                document.getElementById('order-forms').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    console.log(`Pizza Name: ${JSON.stringify(pizza_name)}`);
+                    console.log(`Pizza Size: ${JSON.stringify(pizza_size)}`);
+                    console.log(`Pizza Crust: ${JSON.stringify(pizza_crust)}`);
+                    console.log(`Pizza Topping: ${JSON.stringify(pizza_topping)}`);
+                    alert('Form Submitted !');
+                    if (
+                        pizzaCrustInput.value === "" ||
+                        pizzaSizeInput.value === "" ||
+                        pizzaToppingInput.value === "" ||
+                        nameInput.value === "" ||
+                        pizzaNameInput.value === "" ||
+                        phoneNumberInput.value === "" ||
+                        orderNumberInput.value === "" ||
+                        deliveryInput.value === ""
+                    ) {
+                        alert("Please fill all the fields !");
+                    }
+
+                    Pizza.prototype.getTotal = function () {
+                        return (this.size.price + this.crust.price + this.topping.price) * this.orders;
+                    };
+                    let pizza = new Pizza(pizzaName, pizzaSize, pizzaCrust, pizzaTopping, orders);
+
+                    console.log(`Pizza:`);
+                    console.log(pizza);
+                    alert(total);
+                });
+            });
+
+        });
+    });
+});
