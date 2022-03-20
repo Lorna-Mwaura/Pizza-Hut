@@ -14,7 +14,7 @@
 ### Requirements
 * Make sure you have access to a browser
 * Click here to access the project or click the link in the about section 
-
+https://lorna-mwaura.github.io/Pizza-Hut/
 ### Installation Process
 [Go Back to the top](#Pizza-Hut)
 ## Technologies Used
