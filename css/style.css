@@ -32,5 +32,15 @@
 }
 
 #contact {
-    background-image: url("../Images/wPHyUs-5_400x400.jpg");
+    background-image: url("Images/wPHyUs-5_400x400.jpg");
+}
+#btnT {
+    background-color:grey ;
+    width: 200px;
+    height: fit-content;
+
+}
+#order-form{
+width:fit-content;
+height:fit-content;
 }
