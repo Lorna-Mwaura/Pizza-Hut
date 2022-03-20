@@ -69,3 +69,33 @@
         }
 
     ];
+
+    let pizzaSizeInput = document.getElementById('size');
+    let  pizzaCrustInput = document.getElementById('crust')
+     let pizzaToppingInput = document.getElementById('topping');
+      let  pizzaNameInput = document.getElementById('name');
+      let  customerInput = document.getElementById('customer');
+       let phoneNumberInput = document.getElementById('contact-info');
+       let orderNumberInput = document.getElementById('order-number');
+     let  deliveryInput = document.getElementById('delivery');
+
+        for (let i = 0; i < pizzaSizes.length; i++) {
+            let el = document.createElement("option");
+            el.textContent = `${pizzaSizes[i].type} - Ksh. ${pizza_sizes[i].price}`;
+            el.value = pizzaSizes[i].type;
+ 
+        };
+  
+        for (let i = 0; i < pizzaCrusts.length; i++) {
+            let el = document.createElement("option");
+            el.textContent = `${pizzaCrusts[i].type} - Ksh. ${pizza_crusts[i].price}`;
+            el.value = pizza_crusts[i].type;
+            
+        }
+        for (let i = 0; i < pizzaToppings.length; i++) {
+            let el = document.createElement("option");
+            el.textContent = `${pizzaToppings[i].type} - Ksh. ${pizza_toppings[i].price}`;
+            el.value = pizzaToppings[i].type;
+            
+    };
+   
