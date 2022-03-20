@@ -7,3 +7,30 @@
     padding: 5px;
 
 }
+#home {
+    color: black;
+    font-size: xx-large;
+    background-image: url("../Images/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#piz {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    height: 300px;
+}
+
+#market {
+    display: flex;
+    justify-content: center;
+}
+
+#contact {
+    background-image: url("../Images/wPHyUs-5_400x400.jpg");
+}
