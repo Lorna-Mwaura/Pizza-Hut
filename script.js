@@ -98,4 +98,11 @@
             el.value = pizzaToppings[i].type;
             
     };
-   
+    let pizzaName = '';
+       let pizzaCrust = {};
+       let pizzaTopping = {};
+       let pizzaSize = {};
+       let customerName = '';
+       let customerPhoneNumber = '';
+      let  orders = 0;
+        let deliveryOption = '';
