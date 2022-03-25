@@ -1,11 +1,9 @@
 .topnav {
-    background-color: black;
-    margin: 0;
-    overflow: hidden;
-    color: white;
-    display: block;
-    padding: 5px;
-
+    padding: auto;
+    margin: 30px;
+    background-color: white;
+    align-items: center;
+    font-size: medium;
 }
 
 #home {
@@ -33,7 +31,11 @@
 }
 
 #contact {
-    background-image: url("Images/wPHyUs-5_400x400.jpg");
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-top: 10px;
+
 }
 
 #btnT {
@@ -51,6 +53,7 @@
 #placingorder {
     background-image: url("../Images/crusts.jpeg");
 }
+
 form {
     text-align: left;
     border-radius: 5px;
@@ -58,27 +61,42 @@ form {
     width: 80%;
     margin-left: 25%;
 }
+
 #imgm {
-    width:20px;
+    width: 20px;
     height: 20px;
 }
+
 label {
     display: block;
 }
+
 #customer {
-display: none;
+    display: none;
 }
+
 #form1 {
     width: 500px;
 }
+
 #bill {
     text-align: center;
 }
-#order{
+
+#order {
     background-color: aliceblue;
 }
+
 #about {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+footer {
+    background-color: black;
+    color: white;
+}
+
+li {
+    display: inline;
+}
