@@ -74,7 +74,11 @@ display: none;
 #bill {
     text-align: center;
 }
-#order {
+#order{
     background-color: aliceblue;
+}
+#about {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
