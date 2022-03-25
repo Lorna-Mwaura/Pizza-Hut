@@ -88,8 +88,72 @@
             </div>
         </div>
     </section>
+    <section id ="order">
+        <h2 class="text-center">Place your order</h2>
+        <form name="order" id="form1">
+            <div class="row">
+                <div class = "col-6">
+            <label for="pizzaname">Click to choose pizza type!!</label><br>
+            <select type="dropdown" id="pizzaname" name="pizzaName" class="form-control" required>
+                <option value="">Click to Choose</option>
+                <option value="beef-pepperoni">Beef-Pepperoni</option>
+                <option value="chicken">Chicken</option>
+                <option value="hawaiian">Hawaiian</option>
+            </select><br>
+                </div>
+                <div class = "col-6">
+            <label for="pizzaSizes">Select Size</label><br>
+            <select id="pizzaSizes" name="pizzaSizes" class="form-control" required>
+                <option value="">Click to Choose</option>
+                <option value="1500">Large: Ksh: 1500</option>
+                <option value="1200">Medium: Ksh:1200</option>
+                <option value="800">Small: Ksh: 800</option>
+            </select><br>
+        </div>
+            <div class="row">
+                <div class = "col-6">
+            <label for="crust">Choose your favorite Crust!</label><br>
+            <select id="crust" name="crust" class="form-control" required>
+                <option value="">Click to choose</option>
+                <option value="150">Crispy: Ksh 150</option>
+                <option value="100">Stuffed: Ksh 100</option>
+                <option value="120">Glutten-Free: Ksh 120</option>
+            </select><br>
+                </div>
+                <div class = "col-6">  
+            <label for="topping">Toppings!</label><br>
+            <select id="topping" name="toppings" class="form-control" required>
+                <option value="">Click to choose</option>
+                <option value="150">Bacon: Ksh 150</option>
+                <option value="100">Cheese: Ksh 100</option>
+                <option value="100">Mushroom: Ksh 100</option>
+                <option value="80">Avocado: Ksh 80</option>
+            </select><br>
+            </div>
+            </div>
+            <label for="select"> Delivery Option</label><br>
+            <select type="select" name="delivery" class="form-control" required>
+                <option value="">Choose...</option>
+                <option value="delivery">Delivery</option>
+                <option value="pickup">Pick-up</option>
+            </select> <br>
+            <button type="submit">Click to place order</button>
+        </form>
+        <div id="bill">
+
+        </div>
+        <form id="customer">
+            <label for="userName">Enter your name</label>
+            <input type="text" name="userName" id="userName">
+            <label for="email">Enter your Email</label>
+            <input type="email" name="email" id="email">
+            <label for="location">Add your location</label>
+            <input type="text" name="location" id="location">
+<button type="submit">Submit</button>       
+ </form>
     
-    <a href="pop.html">Click to place your order</a>
+    </section>
+
     <section id="contact">
         <div class="text-center">
             <img src="Images/Contact/facebook.png">

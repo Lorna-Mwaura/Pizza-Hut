@@ -68,5 +68,13 @@ label {
 #customer {
 display: none;
 }
-
+#form1 {
+    width: 500px;
+}
+#bill {
+    text-align: center;
+}
+#order {
+    background-color: aliceblue;
+}
 
