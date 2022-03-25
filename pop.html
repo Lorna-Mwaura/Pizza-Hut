@@ -12,94 +12,111 @@
 </head>
 
 <body>
-<section id="placingorder">
-    <form id="order-form" class="row g-4">
-        <div class="col md-3"></div>
-        <form action="/action_page.php">
-            <form class="row-col-sm-5" id="order-forms">
-                <div id="order-form">
-                    <label for="pizza-type">Click to order!!</label><br>
-                    <select type="dropdown" id="pizzaname" name="name" class="form-control" required>
-                        <datalist id="piz"></datalist>
+    <section>
+        <form name="order" id="form1">
+            <label for="pizzaname">Click to order!!</label><br>
+            <select type="dropdown" id="pizzaname" name="pizzaName" class="form-control" required>
+                <option value="">Click to Choose</option>
+                <option value="beef-pepperoni">Beef-Pepperoni</option>
+                <option value="chicken">Chicken</option>
+                <option value="hawaiian">Hawaiian</option>
+            </select><br>
+            <label for="pizzaSizes">Select Size</label><br>
+            <select id="pizzaSizes" name="pizzaSizes" class="form-control" required>
+                <option value="">Click to Choose</option>
+                <option value="1500">Large: Ksh: 1500</option>
+                <option value="1200">Medium: Ksh:1200</option>
+                <option value="800">Small: Ksh: 800</option>
+            </select><br>
+            <label for="crust">Choose your favorite Crust!</label><br>
+            <select id="crust" name="crust" class="form-control" required>
+                <option value="">Click to choose</option>
+                <option value="150">Crispy: Ksh 150</option>
+                <option value="100">Stuffed: Ksh 100</option>
+                <option value="120">Glutten-Free: Ksh 120</option>
+            </select><br>
+            <label for="topping">Toppings!</label><br>
+            <select id="topping" name="toppings" class="form-control" required>
+                <option value="">Click to choose</option>
+                <option value="150">Bacon: Ksh 150</option>
+                <option value="100">Cheese: Ksh 100</option>
+                <option value="100">Mushroom: Ksh 100</option>
+                <option value="80">Avocado: Ksh 80</option>
+            </select><br>
+            <label for="select"> Delivery Option</label><br>
+            <select type="select" name="delivery" class="form-control" required>
+                <option value="">Choose...</option>
+                <option value="delivery">Delivery</option>
+                <option value="pickup">Pick-up</option>
+            </select> <br>
+            <button type="submit">Click to place order</button>
+        </form>
+        <div id="bill">
 
-                        <option value="beef-pepperoni">Beef-Pepperoni</option>
-                        <option value="chicken">Chicken</option>
-                        <option value="hawaiian">Hawaiian</option>
-                        </datalist>
-                    </div>
-                    </select><br>
-                
-                <div class="col md-3">
-                    <label for="select">Select Size</label><br>
-                    <select id="pizzaSizes" name="pizzaSizes" class="form-control" required>
-                        <option value="">Click to Choose</option>
-                        <option value="">Large: Ksh: 1500</option>
-                        <option value="">Medium: Ksh:1200</option>
-                        <option value="">Small: Ksh: 800</option>
-                    </div>
-                    </select><br>
-                
-                <div class="col md-10">
-                    <label for="crust">Choose your favorite Crust!</label><br>
-                    <select id="crust" name="crust" class="form-control" required>
-                        <option value="">Click to choose</option>
-                        <option value="">Crispy: Ksh 150</option>
-                        <option value="">Stuffed: Ksh 100</option>
-                        <option value="">Glutten-Free: Ksh 120</option>
-                    </div>
-                    </select><br>
-                    <div class="col md-3">
-                    <label for="topping">Topping!</label><br>
-                    <select id="topping" name="topping" class="form-control" required>
-                        <option value="">Click to choose</option>
-                        <option value="">Bacon: Ksh 150</option>
-                        <option value="">Cheese: Ksh 100</option>
-                        <option value="">Mushroom: Ksh 100</option>
-                        <option value="">Avocado: Ksh 80</option>
-                    </div>
-                    </select><br>
-                    <a href="#delivery">Step 3</a>
-                    <br><br>
-                    <section id="delivery">
-                </div>
+        </div>
+        <form id="customer">
+            <label for="userName">Enter your name</label>
+            <input type="text" name="userName" id="userName">
+            <label for="email">Enter your Email</label>
+            <input type="email" name="email" id="email">
+            <label for="location">Add your location</label>
+            <input type="text" name="location" id="location">
+<button type="submit">Submit</button>       
+ </form>
+    
+    </section>
+    <!-- <section id="placingorder">
+        <form id="order-form" class="row g-4">
+            <div class="col md-3">
+                <form action="/action_page.php">
+                    <form class="row-col-sm-5" id="order-forms">
+                        <div id="order-form">
+                         
+                        <div class="col md-3">
+                         
 
-                <div action="" class="form-delivery">
-                    <div action="" class="form-delivery">
-                        <label for="Name">Name</label><br>
-                        <div>
-                            <input type="text" class="form-input" id="customer" placeholder="Your Name"
-                                name="name-input" required>
-                        </div><br>
-                        <div>
-                            <label for="phonenumber">Phone Number</label><br>
-                            <input type="number" id="contact-info" name="phone-number" placeholder="Your Phone Number"
-                                class="form-input" required>
-                        </div><br>
-                        <div>
-                            <label class="order-number-label" for="order"> Number of
-                                orders</label><br>
-                            <input type="number" class="form-input" id="order-number" v placeholder="Number of orders"
-                                name="order-number" required>
-                        </div><br>
-                        <div>
-                            <label for="select"> Delivery Option</label><br>
-                            <select type="select" id="delivery" name="delivery" class="form-control" required>
-                                <option value="">Choose...</option>
-                                <option value="Delivery option">Delivery</option>
-                                <option value="Pick-up option">Pick-up</option>
-                            </select>
+                        <div class="col md-10">
+                         
                         </div>
-                    </div>
-                </div>
-                <button type="submit" id="btnT">Total</button>
-            </form>
-            </section>
-        </section>
-            <a href="index.html">Click to go back</a>
-            <script src="https://code.jquery.com/jquery-3.6.0.js"
-                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
-            </script>
-            <script src="script.js"></script>
+                        </select><br>
+                        <div class="col md-3">
+                           
+                        </div>
+                        </select><br>
+
+                        <div action="" class="form-delivery">
+                            <div action="" class="form-delivery">
+                                <label for="Name">Name</label><br>
+                                <div>
+                                    <input type="text" class="form-input" id="customer" placeholder="Your Name"
+                                        name="name-input" required>
+                                </div><br>
+                                <div>
+                                    <label for="phonenumber">Phone Number</label><br>
+                                    <input type="number" id="contact-info" name="phone-number"
+                                        placeholder="Your Phone Number" class="form-input" required>
+                                </div><br>
+                                <div>
+                                    <label class="order-number-label" for="order"> Number of
+                                        orders</label><br>
+                                    <input type="number" class="form-input" id="order-number" v
+                                        placeholder="Number of orders" name="order-number" required>
+                                </div><br>
+                                <div>
+                                 
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" id="btnT">Total</button>
+                    </form>
+    </section>
+    </section> -->
+    <a href="index.html">Click to go back</a>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 
 </body>
 
